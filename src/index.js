@@ -14,16 +14,16 @@ let options = {
 };
 
 let req = http.request(options, function (res) {
-let chunks = [];
+  let chunks = [];
 
-res.on("data", function (chunk) {
-  chunks.push(chunk);
-});
+  res.on("data", function (chunk) {
+    chunks.push(chunk);
+  });
 
-res.on("end", function () {
-  let body = Buffer.concat(chunks);
-  console.log(body.toString());
-});
+  res.on("end", function () {
+    let body = Buffer.concat(chunks);
+    console.log(body.toString());
+  });
 });
 
 req.end();
