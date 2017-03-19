@@ -1,0 +1,19 @@
+{
+  "name": "discord-voice-bot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephen-hartshorne/discord-voice-bot.git"
+  },
+  "author": "Stephen Hartshorne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephen-hartshorne/discord-voice-bot/issues"
+  },
+  "homepage": "https://github.com/stephen-hartshorne/discord-voice-bot#readme"
+}
