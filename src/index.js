@@ -4,24 +4,24 @@ const token = 'MjkyMzc3MDgyODgzODY2NjM1.C63I6A.--76EVlNpvLu4xAdyrP3qjlhD3I';
 let BASE_API_HOST = 'discordapp.com';
 let BASE_API_PATH = '/api';
 
-var http = require("https");
+let http = require("https");
 
-var options = {
+let options = {
 "method": "GET",
 "hostname": BASE_API_HOST,
 "port": null,
-"path": '/api/gateway'
+"path": `${BASE_API_PATH}/gateway`
 };
 
-var req = http.request(options, function (res) {
-var chunks = [];
+let req = http.request(options, function (res) {
+let chunks = [];
 
 res.on("data", function (chunk) {
   chunks.push(chunk);
 });
 
 res.on("end", function () {
-  var body = Buffer.concat(chunks);
+  let body = Buffer.concat(chunks);
   console.log(body.toString());
 });
 });
